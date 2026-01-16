@@ -1,0 +1,20 @@
+# Binaries
+fitbit-strava
+
+# Environment and Secrets
+.env
+credentials.json
+
+# Generated Artifacts
+*.fit
+workout.fit
+
+# OS Specific
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Dependencies
+vendor/
