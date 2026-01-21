@@ -10,11 +10,9 @@ import (
 type Config struct {
 	FitbitClientID     string
 	FitbitClientSecret string
-	FitbitRedirectURL  string
 
 	StravaClientID     string
 	StravaClientSecret string
-	StravaRedirectURL  string
 }
 
 func Load() (*Config, error) {
@@ -27,11 +25,9 @@ func Load() (*Config, error) {
 	cfg := &Config{
 		FitbitClientID:     os.Getenv("FITBIT_CLIENT_ID"),
 		FitbitClientSecret: os.Getenv("FITBIT_CLIENT_SECRET"),
-		FitbitRedirectURL:  os.Getenv("FITBIT_REDIRECT_URL"),
 
 		StravaClientID:     os.Getenv("STRAVA_CLIENT_ID"),
 		StravaClientSecret: os.Getenv("STRAVA_CLIENT_SECRET"),
-		StravaRedirectURL:  os.Getenv("STRAVA_REDIRECT_URL"),
 	}
 
 	if cfg.FitbitClientID == "" || cfg.FitbitClientSecret == "" {

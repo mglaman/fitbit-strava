@@ -46,7 +46,7 @@ func main() {
 	fitbitConfig := &oauth2.Config{
 		ClientID:     cfg.FitbitClientID,
 		ClientSecret: cfg.FitbitClientSecret, // Fixed typo in variable name if strictly following config
-		RedirectURL:  cfg.FitbitRedirectURL,
+		RedirectURL:  "http://localhost:8080/callback",
 		Scopes:       []string{"heartrate", "activity"},
 		Endpoint:     fitbitOAuth.Endpoint,
 	}
@@ -60,7 +60,7 @@ func main() {
 	stravaOAuth := &oauth2.Config{
 		ClientID:     cfg.StravaClientID,
 		ClientSecret: cfg.StravaClientSecret,
-		RedirectURL:  cfg.StravaRedirectURL,
+		RedirectURL:  "http://localhost:8080/callback",
 		Scopes:       []string{"activity:write"},
 		Endpoint:     stravaEndpoint,
 	}

@@ -45,11 +45,9 @@ Create a `.env` file in the project root with your OAuth2 credentials:
 ```env
 FITBIT_CLIENT_ID=your_fitbit_client_id
 FITBIT_CLIENT_SECRET=your_fitbit_client_secret
-FITBIT_REDIRECT_URL=http://localhost:8080/callback
 
 STRAVA_CLIENT_ID=your_strava_client_id
 STRAVA_CLIENT_SECRET=your_strava_client_secret
-STRAVA_REDIRECT_URL=http://localhost:8080/callback
 ```
 
 ## Usage
